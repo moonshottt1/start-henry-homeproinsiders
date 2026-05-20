@@ -400,12 +400,6 @@
     <h2>Don't Overpay For Your Roof Replacement</h2>
     <p class="card-sub">Compare prices from trusted, top-rated roofing contractors in <strong id="city-name-2">your area</strong> before you commit.</p>
 
-    <!-- CHANGE #3: Red urgency line right above the CTA -->
-    <p class="cta-urgency">
-      <span class="flame">🔥</span>
-      <span><strong id="cta-urgency-state">Your State</strong> roofers booking <strong id="cta-urgency-month">May</strong> fast</span>
-    </p>
-
     <!-- CHANGE #4: Orange CTA (was blue) -->
     <a href="https://start.homeproinsiders.com/cf/click/1" class="cta-btn">Enter Zip Code</a>
 
@@ -448,7 +442,6 @@
     const now = new Date();
     document.getElementById('yr').textContent = now.getFullYear();
     document.getElementById('month-name').textContent = MONTHS[now.getMonth()];
-    document.getElementById('cta-urgency-month').textContent = MONTHS[now.getMonth()];
 
     // Price drop deadline: today + 2 days
     (function setPriceDropDate() {
@@ -474,7 +467,6 @@
       }
       if (state) {
         document.getElementById('state-heading').textContent = 'Supported by the State of ' + state;
-        document.getElementById('cta-urgency-state').textContent = state;
         document.getElementById('stat-state').textContent = state;
       }
     }
