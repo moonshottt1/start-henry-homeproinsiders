@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roof Replacement Costs Near You</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Compare roof replacement prices from local roofing contractors in your area.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2424354154702125'); // Home - Lead
+  fbq('init', '1443815484069329'); // Home - Purchase
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2424354154702125&ev=PageView&noscript=1"
+  /><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1443815484069329&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: #eef1f6;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Top section */
+    .top-section {
+      width: 100%;
+      background: #fff;
+      text-align: center;
+      padding: 20px 20px 16px;
+    }
+    .header-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .shield { width: 36px; height: 36px; flex-shrink: 0; }
+    .shield svg { width: 100%; height: 100%; }
+    .top-heading { font-size: 1.05rem; font-weight: 800; color: #1a1a2e; }
+    .top-sub {
+      font-size: 0.82rem;
+      color: #666;
+      max-width: 280px;
+      margin: 0 auto;
+    }
+    .top-sub strong { color: #333; }
+
+    /* Price drop alert (boxed + pulsing) */
+    .price-drop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 14px auto 0;
+      padding: 10px 14px;
+      background: #fef2f2;
+      border: 1.5px solid #ef4444;
+      border-radius: 8px;
+      max-width: 360px;
+      font-size: 0.95rem;
+      color: #7f1d1d;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+      text-align: center;
+      animation: pricePulse 2.4s ease-in-out infinite;
+    }
+    .price-drop .bolt { color: #dc2626; font-size: 1.05rem; }
+    .price-drop strong {
+      color: #7f1d1d;
+      text-decoration: underline;
+      text-decoration-color: #dc2626;
+      text-decoration-thickness: 2px;
+    }
+    @keyframes pricePulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.3); }
+      50% { box-shadow: 0 0 0 6px rgba(239,68,68,0); }
+    }
+
+    .countdown-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 12px;
+    }
+    .info-lead {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #333;
+      text-align: left;
+      line-height: 1.3;
+    }
+    .countdown-num {
+      font-size: 3.5rem;
+      font-weight: 900;
+      color: #2563eb;
+      text-align: center;
+      line-height: 1;
+      transition: transform 0.15s;
+    }
+    .countdown-num.pop { transform: scale(1.15); }
+    .countdown-label {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #666;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Card */
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 24px 24px 24px;
+      margin: 16px 16px 0;
+      max-width: 400px;
+      width: calc(100% - 32px);
+      text-align: center;
+    }
+
+    /* CHANGE #5: Progress bar with label */
+    .progress-wrap {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 8px;
+      padding: 0;
+    }
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background: #e0e4ea;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      width: 25%;
+      height: 100%;
+      background: #f58220;
+      border-radius: 3px;
+    }
+    .progress-label {
+      font-size: 0.72rem;
+      color: #888;
+      margin-top: 6px;
+      margin-bottom: 14px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      text-transform: uppercase;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #1a1a2e;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .card-sub {
+      font-size: 0.88rem;
+      color: #777;
+      margin-bottom: 14px;
+    }
+
+    /* CHANGE #3: Urgency line directly above CTA */
+    .cta-urgency {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin: 0 auto 12px;
+      font-size: 0.88rem;
+      color: #b91c1c;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+    .cta-urgency .flame {
+      font-size: 1rem;
+      transform: translateY(-1px);
+    }
+    .cta-urgency strong { color: #7f1d1d; }
+
+    /* CHANGE #4: Orange CTA button (was blue) */
+    .cta-btn {
+      display: block;
+      width: 100%;
+      padding: 18px 24px;
+      background: linear-gradient(180deg, #f58220 0%, #d86a0f 100%);
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      letter-spacing: 0.2px;
+      box-shadow: 0 6px 18px rgba(245,130,32,0.32), inset 0 -2px 0 rgba(0,0,0,0.14);
+      transition: transform 0.12s ease, background 0.12s ease, box-shadow 0.12s ease;
+    }
+    .cta-btn:hover {
+      background: linear-gradient(180deg, #d86a0f 0%, #b85a0c 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 22px rgba(245,130,32,0.4);
+    }
+
+    /* CHANGE #2: Trust seal moved BELOW the CTA */
+    .trust-seal {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 16px auto 0;
+      padding: 8px 12px;
+      background: #fff;
+      border: 2px solid #0f2744;
+      border-radius: 8px;
+      max-width: 230px;
+      position: relative;
+      box-shadow: 0 1px 3px rgba(15,39,68,0.1);
+    }
+    .trust-seal::before {
+      content: '';
+      position: absolute;
+      inset: 2px;
+      border: 1px solid #d4a017;
+      border-radius: 6px;
+      pointer-events: none;
+    }
+    .trust-seal-icon { width: 38px; height: 38px; flex-shrink: 0; position: relative; z-index: 1; }
+    .trust-seal-icon svg { width: 100%; height: 100%; display: block; }
+    .trust-seal-text { flex: 1; text-align: left; position: relative; z-index: 1; }
+    .trust-seal-main {
+      font-size: 14px;
+      font-weight: 900;
+      color: #0f2744;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+    }
+    .trust-seal-sub {
+      font-size: 9px;
+      font-weight: 700;
+      color: #0f2744;
+      letter-spacing: 0.3px;
+      margin-top: 2px;
+    }
+    .trust-seal-stars {
+      font-size: 10px;
+      color: #d4a017;
+      letter-spacing: 2px;
+      margin-top: 3px;
+      line-height: 1;
+    }
+
+    /* CHANGE #6: Social proof stat band (replaces 200px gap) */
+    .stat-band {
+      width: 100%;
+      padding: 24px 20px;
+      margin: 24px 0 0;
+      text-align: center;
+    }
+    .stat-num {
+      font-size: 2.4rem;
+      font-weight: 900;
+      color: #2563eb;
+      line-height: 1;
+      margin-bottom: 6px;
+      font-variant-numeric: tabular-nums;
+    }
+    .stat-label {
+      font-size: 0.95rem;
+      color: #5a6478;
+      font-weight: 600;
+      max-width: 320px;
+      margin: 0 auto;
+      line-height: 1.4;
+    }
+    .stat-label strong { color: #1a2238; }
+
+    /* Disclaimer */
+    .disclaimer {
+      margin-top: 8px;
+      padding: 0 20px;
+      max-width: 400px;
+      text-align: center;
+    }
+    .disclaimer p {
+      font-size: 0.72rem;
+      color: #999;
+      line-height: 1.5;
+    }
+    .disclaimer strong { color: #666; }
+
+    /* Footer (blended) */
+    footer {
+      width: 100%;
+      background: #eef1f6;
+      padding: 20px 16px;
+      text-align: center;
+      margin-top: auto;
+    }
+    .footer-text {
+      font-size: 0.6rem;
+      color: #b8c0cc;
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 0 auto 6px;
+    }
+    .footer-links { font-size: 0.7rem; color: #c0c8d4; }
+    .footer-links a { color: #a8b0bc; text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="top-section">
+    <div class="header-row">
+      <div class="shield">
+        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <clipPath id="shieldClip">
+              <path d="M50 14 C50 14 68 14 72 18 L72 48 C72 62 61 73 50 78 C39 73 28 62 28 48 L28 18 C32 14 50 14 50 14Z"/>
+            </clipPath>
+            <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+              <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.12"/>
+            </filter>
+            <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1b3a6b"/>
+              <stop offset="100%" stop-color="#142c52"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="46" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="1.5" filter="url(#shadow)"/>
+          <path d="M50 14 C50 14 68 14 72 18 L72 48 C72 62 61 73 50 78 C39 73 28 62 28 48 L28 18 C32 14 50 14 50 14Z" fill="url(#shieldGrad)" stroke="#0f2744" stroke-width="0.5"/>
+          <g clip-path="url(#shieldClip)">
+            <rect x="28" y="14" width="44" height="5" fill="#bf0a30"/>
+            <rect x="28" y="19" width="44" height="5" fill="#fff"/>
+            <rect x="28" y="24" width="44" height="5" fill="#bf0a30"/>
+            <rect x="28" y="29" width="44" height="5" fill="#fff"/>
+            <rect x="28" y="34" width="44" height="5" fill="#bf0a30"/>
+            <rect x="28" y="39" width="44" height="5" fill="#fff"/>
+            <rect x="28" y="44" width="44" height="5" fill="#bf0a30"/>
+            <rect x="28" y="49" width="44" height="5" fill="#fff"/>
+            <rect x="28" y="54" width="44" height="5" fill="#bf0a30"/>
+            <rect x="28" y="59" width="44" height="5" fill="#fff"/>
+            <rect x="28" y="64" width="44" height="5" fill="#bf0a30"/>
+            <rect x="28" y="69" width="44" height="5" fill="#fff"/>
+            <rect x="28" y="74" width="44" height="5" fill="#bf0a30"/>
+            <rect x="28" y="14" width="20" height="27" fill="#002868"/>
+            <circle cx="32" cy="17.5" r="1" fill="#fff"/><circle cx="36" cy="17.5" r="1" fill="#fff"/><circle cx="40" cy="17.5" r="1" fill="#fff"/><circle cx="44" cy="17.5" r="1" fill="#fff"/>
+            <circle cx="34" cy="21" r="1" fill="#fff"/><circle cx="38" cy="21" r="1" fill="#fff"/><circle cx="42" cy="21" r="1" fill="#fff"/>
+            <circle cx="32" cy="24.5" r="1" fill="#fff"/><circle cx="36" cy="24.5" r="1" fill="#fff"/><circle cx="40" cy="24.5" r="1" fill="#fff"/><circle cx="44" cy="24.5" r="1" fill="#fff"/>
+            <circle cx="34" cy="28" r="1" fill="#fff"/><circle cx="38" cy="28" r="1" fill="#fff"/><circle cx="42" cy="28" r="1" fill="#fff"/>
+            <circle cx="32" cy="31.5" r="1" fill="#fff"/><circle cx="36" cy="31.5" r="1" fill="#fff"/><circle cx="40" cy="31.5" r="1" fill="#fff"/><circle cx="44" cy="31.5" r="1" fill="#fff"/>
+            <circle cx="34" cy="35" r="1" fill="#fff"/><circle cx="38" cy="35" r="1" fill="#fff"/><circle cx="42" cy="35" r="1" fill="#fff"/>
+            <circle cx="32" cy="38.5" r="1" fill="#fff"/><circle cx="36" cy="38.5" r="1" fill="#fff"/><circle cx="40" cy="38.5" r="1" fill="#fff"/><circle cx="44" cy="38.5" r="1" fill="#fff"/>
+          </g>
+          <path d="M50 14 C50 14 68 14 72 18 L72 48 C72 62 61 73 50 78 C39 73 28 62 28 48 L28 18 C32 14 50 14 50 14Z" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <circle cx="68" cy="72" r="14" fill="#2563eb" stroke="#fff" stroke-width="3"/>
+          <path d="M61 72 L66 77 L76 67" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <div class="top-heading" id="state-heading">Supported by the State</div>
+    </div>
+    <p class="top-sub">New <strong id="month-name">March</strong> roof replacement rates for <strong id="city-name">Your Area</strong> homeowners.</p>
+
+    <p class="price-drop"><span class="bolt">⚡</span> Price drop until <strong id="price-drop-date">Friday</strong></p>
+
+    <div class="countdown-row">
+      <p class="info-lead">Replace Your Roof<br>In As Little As</p>
+      <div class="countdown-box">
+        <div class="countdown-num" id="day-count">10</div>
+        <p class="countdown-label">Day</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <!-- CHANGE #5: Progress bar now has a label -->
+    <div class="progress-wrap">
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="progress-label">Quick 60-second comparison</p>
+    </div>
+
+    <h2>Don't Overpay For Your Roof Replacement</h2>
+    <p class="card-sub">Compare prices from trusted, top-rated roofing contractors in <strong id="city-name-2">your area</strong> before you commit.</p>
+
+    <!-- CHANGE #3: Red urgency line right above the CTA -->
+    <p class="cta-urgency">
+      <span class="flame">🔥</span>
+      <span><strong id="cta-urgency-state">Your State</strong> roofers booking <strong id="cta-urgency-month">May</strong> fast</span>
+    </p>
+
+    <!-- CHANGE #4: Orange CTA (was blue) -->
+    <a href="https://start.homeproinsiders.com/cf/click/1" class="cta-btn">Enter Zip Code</a>
+
+    <!-- CHANGE #2: Trust seal moved BELOW the CTA -->
+    <div class="trust-seal" aria-label="Verified contractor network">
+      <div class="trust-seal-icon">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="ts-grad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1b3a6b"/>
+              <stop offset="100%" stop-color="#0f2744"/>
+            </linearGradient>
+          </defs>
+          <path d="M32 6 C32 6 46 6 52 12 L52 36 C52 48 43 58 32 62 C21 58 12 48 12 36 L12 12 C18 6 32 6 32 6 Z" fill="url(#ts-grad)" stroke="#d4a017" stroke-width="2"/>
+          <path d="M20 32 L28 40 L44 24" stroke="#d4a017" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+      </div>
+      <div class="trust-seal-text">
+        <div class="trust-seal-main">VERIFIED</div>
+        <div class="trust-seal-sub">CONTRACTOR NETWORK</div>
+        <div class="trust-seal-stars">&#9733; &#9733; &#9733; &#9733; &#9733;</div>
+      </div>
+    </div>
+
+    <!-- CHANGE #1: Removed "Trusted Contractors • 5-Star Workmanship" + duplicate stars (redundant with trust seal) -->
+  </div>
+
+  <!-- CHANGE #6: Stat band replaces the 200px empty gap -->
+  <section class="stat-band">
+    <div class="stat-num" id="stat-homeowners">4,237</div>
+    <p class="stat-label"><strong id="stat-state">U.S.</strong> homeowners compared roofing quotes this month</p>
+  </section>
+
+  <div class="disclaimer">
+    <p>This is <strong>NOT</strong> a free service. Roof replacements have a cost. Compare prices from local roofing contractors to find savings. This is not a government program.</p>
+  </div>
+
+  <footer>
+    <p class="footer-text">Results may vary. Our intention is to provide an online resource that is both informative and helpful. The website and the company that owns it is not responsible for any typographical or photographic errors. All trademarks, logos, and service marks displayed are registered or unregistered trademarks of their respective owners. Receiving multiple estimates from comparison sites can give you access to the most competitive rates in your local area. This website is not a part of Facebook, Instagram, Meta Platforms, Inc., or Google LLC. Additionally, this site is not endorsed by Meta Platforms, Inc. or Google in any way. Facebook and Instagram are trademarks of Meta Platforms, Inc. Google is a trademark of Google LLC.</p>
+    <p class="footer-links">&copy; <span id="yr"></span> HomeProInsiders. <a href="https://homeproinsiders.com/privacy.html">Privacy Policy</a> &middot; <a href="https://homeproinsiders.com/terms.html">Terms of Service</a></p>
+  </footer>
+
+  <script>
+    const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const SHORT_MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    const now = new Date();
+    document.getElementById('yr').textContent = now.getFullYear();
+    document.getElementById('month-name').textContent = MONTHS[now.getMonth()];
+    document.getElementById('cta-urgency-month').textContent = MONTHS[now.getMonth()];
+
+    // Price drop deadline: today + 2 days
+    (function setPriceDropDate() {
+      var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+      var drop = new Date(now);
+      drop.setDate(now.getDate() + 2);
+      document.getElementById('price-drop-date').textContent =
+        DAYS[drop.getDay()] + ', ' + SHORT_MONTHS[drop.getMonth()] + ' ' + drop.getDate();
+    })();
+
+    // Daily-stable random homeowner count (4,000-6,500 range, seeded by date)
+    (function setHomeownerStat() {
+      var seed = now.getFullYear() * 1000 + now.getMonth() * 31 + now.getDate();
+      var count = 4000 + (seed * 137 % 2500);
+      document.getElementById('stat-homeowners').textContent = count.toLocaleString();
+    })();
+
+    function applyGeo(city, state) {
+      if (city) {
+        document.getElementById('city-name').textContent = city;
+        document.getElementById('city-name-2').textContent = city;
+        if (window._toastCity) window._toastCity(city);
+      }
+      if (state) {
+        document.getElementById('state-heading').textContent = 'Supported by the State of ' + state;
+        document.getElementById('cta-urgency-state').textContent = state;
+        document.getElementById('stat-state').textContent = state;
+      }
+    }
+
+    fetch('https://ipapi.co/json/')
+      .then(r => r.json())
+      .then(d => {
+        if (d && (d.city || d.region)) {
+          applyGeo(d.city, d.region);
+        } else {
+          throw new Error('no data');
+        }
+      })
+      .catch(() => {
+        fetch('https://ip-api.com/json/?fields=city,regionName')
+          .then(r => r.json())
+          .then(d => { applyGeo(d.city, d.regionName); })
+          .catch(() => {});
+      });
+  </script>
+
+  <script src="/new-roof-quotes-1/social-proof.js"></script>
+
+  <!-- Day countdown -->
+  <script>
+  (function() {
+    var el = document.getElementById('day-count');
+    var current = 10;
+    var speeds = {10:100, 9:100, 8:120, 7:150, 6:180, 5:220, 4:350, 3:500, 2:650, 1:0};
+    function tick() {
+      current--;
+      el.classList.add('pop');
+      el.textContent = current === 1 ? '1+' : current;
+      setTimeout(function() { el.classList.remove('pop'); }, 150);
+      if (current <= 1) {
+        el.style.color = '#16a34a';
+        return;
+      }
+      setTimeout(tick, speeds[current]);
+    }
+    setTimeout(tick, speeds[current]);
+  })();
+  </script>
+
+  <!-- ClickFlare Lander Tracking -->
+  <script>!function(){"use strict";var t="lp_ref",n="cpid",e="lpurl",c="https://start.homeproinsiders.com",r="(?<domain>http(?:s?)://[^/]*)".concat("/cf/click"),a="(?:(?:/(?<cta>[1-9][0-9]*)/?)|(?:/))?",i="^".concat(r).concat(a).concat("(?:$|(\\?.*))"),o='javascript:window.clickflare.l="(?<original_link>'.concat(r).concat(a,'("|(\\?[^"]*"))).*'),s=function(){return new RegExp(i,"")},u=function(){return new RegExp(o,"")};function l(t){var n=function(t){return t.replace(s(),(function(t){for(var n=[],e=1;e<arguments.length;e++)n[e-1]=arguments[e];var r=n[n.length-1].domain;return t.replace(r,c)}))}(t);return'javascript:window.clickflare.l="'.concat(n,'"; void 0;')}function d(t,n){if(n&&t&&n.apply(document,[t]),/loaded|interactive|complete/.test(document.readyState))for(var e=0,c=document.links.length;e<c;e++)if(s().test(document.links[e].href)){var r=document.links[e];window.clickflare.links_replaced.has(r)||(r.href=l(r.href),window.clickflare.links_replaced.add(r))}}var f,h,m,p;!function(r,a){var i=document.onreadystatechange;window.clickflare||(window.clickflare={listeners:{},customParams:{},links_replaced:new Set,addEventListener:function(t,n){var e=this.listeners[t]||[];e.includes(n)||e.push(n),this.listeners[t]=e},dispatchEvent:function(t,n){n&&(this.customParams[t]=n),(this.listeners[t]||[]).forEach((function(t){return t(n)}))},push:function(t,n){n&&(this.customParams[t]=n),(this.listeners[t]||[]).forEach((function(t){return t(n)}))}},document.onreadystatechange=function(t){return d(t,i)},d(null,i),setTimeout((function(){!function(r,a){var i,o=function(r,a){var i=new URL("".concat(c).concat(r));o=a,s="{",u=s+s,l="_",d=l+l,o.startsWith(u)||o.startsWith(d)||i.searchParams.set(n,a);var o,s,u,l,d;return i.searchParams.append(t,document.referrer),i.searchParams.append(e,location.href),i.searchParams.append("lpt",document.title),i.searchParams.append("t",(new Date).getTime().toString()),i.toString()}(r,a),s=document.createElement("script"),l=document.scripts[0];s.async=1,s.src=o,s.onerror=function(){!function(){for(var t=function(t,n){var e=document.links[t];u().test(decodeURI(e.href))&&setTimeout((function(){e&&e.setAttribute("href",function(t){var n=t.match(u());if(n){var e=(n.groups||{}).original_link;return e?e.slice(0,-1):t}return t}(decodeURI(e.href)))}))},n=0,e=document.links.length;n<e;n++)t(n)}()},null===(i=l.parentNode)||void 0===i||i.insertBefore(s,l)}(r,a)})))}("".concat("/cf/tags","/").concat(new URL(window.location.href).searchParams.get("cftmid")||"__CONTAINER_ID__"),(m=new URL(window.location.href).searchParams.get(n),f=new RegExp("(^| )".concat("cf_cpid","=([^;]+)")),p=(h=document.cookie.match(f))&&h.pop()||null,m||p||"__CAMPAIGN_ID__"))}();</script>
+
+  <!-- FBP/FBC Cookie Capture -->
+  <script>
+  (function() {
+    function getFbCookie(name) {
+      var match = document.cookie.split(';').find(function(c) {
+        return c.trim().startsWith(name + '=');
+      });
+      return match ? match.split('=')[1] : '';
+    }
+    function getFbValues() {
+      var fbp = getFbCookie('_fbp');
+      var fbc = getFbCookie('_fbc');
+      if (!fbc && window.location.search.includes('fbclid=')) {
+        var fbclid = new URLSearchParams(window.location.search).get('fbclid');
+        if (fbclid) fbc = 'fb.1.' + Date.now() + '.' + fbclid;
+      }
+      return { fbp: fbp, fbc: fbc };
+    }
+    function addParamsToUrl(urlStr, fbp, fbc) {
+      try {
+        var url = new URL(urlStr);
+        if (fbp) url.searchParams.set('fbp', fbp);
+        if (fbc) url.searchParams.set('fbc', fbc);
+        return url.toString();
+      } catch(e) { return urlStr; }
+    }
+    function appendFbParams() {
+      var fb = getFbValues();
+      if (!fb.fbp && !fb.fbc) return;
+      document.querySelectorAll('a').forEach(function(link) {
+        var href = link.getAttribute('href') || '';
+        if (href.indexOf('javascript:') === 0 && href.indexOf('/cf/click') !== -1) {
+          var match = href.match(/window\.clickflare\.l="([^"]+)"/);
+          if (match) {
+            var updated = addParamsToUrl(match[1], fb.fbp, fb.fbc);
+            link.setAttribute('href', href.replace(match[1], updated));
+          }
+        } else if (href.indexOf('/cf/click') !== -1) {
+          link.href = addParamsToUrl(href, fb.fbp, fb.fbc);
+        }
+      });
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(appendFbParams, 500);
+      });
+    } else {
+      setTimeout(appendFbParams, 500);
+    }
+    document.addEventListener('click', function(e) {
+      var link = e.target.closest('a');
+      if (link) {
+        var href = link.getAttribute('href') || '';
+        if (href.indexOf('/cf/click') !== -1) {
+          appendFbParams();
+        }
+      }
+    }, true);
+  })();
+  </script>
+
+</body>
+</html>
