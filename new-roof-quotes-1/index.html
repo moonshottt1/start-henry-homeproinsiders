@@ -459,10 +459,10 @@
         DAYS[drop.getDay()] + ', ' + SHORT_MONTHS[drop.getMonth()] + ' ' + drop.getDate();
     })();
 
-    // Daily-stable random homeowner count (4,000-6,500 range, seeded by date)
+    // Daily-stable random homeowner count (12,000-25,000 range, seeded by date)
     (function setHomeownerStat() {
       var seed = now.getFullYear() * 1000 + now.getMonth() * 31 + now.getDate();
-      var count = 4000 + (seed * 137 % 2500);
+      var count = 12000 + (seed * 137 % 13000);
       document.getElementById('stat-homeowners').textContent = count.toLocaleString();
     })();
 
