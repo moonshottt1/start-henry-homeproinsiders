@@ -137,6 +137,44 @@
       letter-spacing: 1px;
       margin-bottom: 0;
     }
+
+    /* Quote deadline badge */
+    .quote-deadline-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 14px auto 0;
+      padding: 10px 14px;
+      background: #fef2f2;
+      border: 1.5px solid #ef4444;
+      border-radius: 8px;
+      max-width: 360px;
+      animation: deadlinePulse 2.4s ease-in-out infinite;
+    }
+    .quote-deadline-row .deadline-icon {
+      width: 20px;
+      height: 20px;
+      color: #dc2626;
+      flex-shrink: 0;
+    }
+    .quote-deadline-row p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: #7f1d1d;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+    .quote-deadline-row strong {
+      color: #7f1d1d;
+      text-decoration: underline;
+      text-decoration-color: #dc2626;
+      text-decoration-thickness: 2px;
+    }
+    @keyframes deadlinePulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.3); }
+      50% { box-shadow: 0 0 0 6px rgba(239,68,68,0); }
+    }
     /* Card */
     .card {
       background: #fff;
@@ -288,6 +326,14 @@
         <p class="countdown-label">Day</p>
       </div>
     </div>
+
+    <div class="quote-deadline-row">
+      <svg class="deadline-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>
+      <p>Get your <strong id="quote-month">May</strong> quote by <strong id="quote-deadline-date">Friday</strong></p>
+    </div>
   </div>
 
   <div class="card">
@@ -316,9 +362,22 @@
 
   <script>
     const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    const SHORT_MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
     const now = new Date();
     document.getElementById('yr').textContent = now.getFullYear();
     document.getElementById('month-name').textContent = MONTHS[now.getMonth()];
+
+    // Quote deadline: next upcoming Friday (always future-dated)
+    (function setQuoteDeadline() {
+      document.getElementById('quote-month').textContent = MONTHS[now.getMonth()];
+      var day = now.getDay();
+      var daysUntilFriday = (5 - day + 7) % 7;
+      if (daysUntilFriday === 0) daysUntilFriday = 7; // if today is Friday, push to next Friday
+      var friday = new Date(now);
+      friday.setDate(now.getDate() + daysUntilFriday);
+      document.getElementById('quote-deadline-date').textContent =
+        'Friday, ' + SHORT_MONTHS[friday.getMonth()] + ' ' + friday.getDate();
+    })();
 
     function applyGeo(city, state) {
       if (city) {
